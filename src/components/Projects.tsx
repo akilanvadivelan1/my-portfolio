@@ -25,7 +25,7 @@ export default function Projects() {
   return (
     <Section
       id="work"
-      index="03"
+      index="04"
       label="selected work"
       title="Things I've built."
     >

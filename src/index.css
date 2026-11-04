@@ -14,12 +14,28 @@ body {
   @apply bg-ink-950 text-white font-sans antialiased;
 }
 
-/* Subtle grid backdrop, Groq-style */
+/* Subtle grid backdrop */
 .grid-backdrop {
   background-image:
     linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
   background-size: 64px 64px;
+}
+
+/* Faint film-grain noise over the whole page for a deep "neocloud" feel */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Soft vertical fade that deepens the page toward the bottom */
+.deepen {
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(245, 80, 54, 0.08), transparent 60%);
 }
 
 .text-balance {

@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <Section
       id="skills"
-      index="02"
+      index="03"
       label="skills"
       title="What I work with."
     >

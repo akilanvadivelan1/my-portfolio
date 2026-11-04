@@ -14,6 +14,37 @@ export const profile = {
   ],
 };
 
+// Headline stats band (Groq-style confident numbers, but all mine).
+export const stats: { value: string; label: string }[] = [
+  { value: "2", label: "shipped products" },
+  { value: "15", label: "benefit programs mapped" },
+  { value: "500", label: "S&P companies analyzed" },
+  { value: "0", label: "user data stored" },
+  { value: "3", label: "core languages" },
+];
+
+// A nested "how I build" stack: each layer sits on top of the one below it,
+// the way a real stack of foundations -> logic -> interface comes together.
+export type Layer = { kicker: string; name: string; body: string };
+
+export const layers: Layer[] = [
+  {
+    kicker: "Foundation",
+    name: "Honest data & rules",
+    body: "Every project starts from sources I can point to. Logic is explicit and traceable, never a black box, so the output can be trusted and explained.",
+  },
+  {
+    kicker: "Engine",
+    name: "Software & machine learning",
+    body: "On top of that foundation I build the working parts: scored rule engines, data pipelines, and NLP models that turn raw, messy inputs into a clear signal.",
+  },
+  {
+    kicker: "Interface",
+    name: "Something a person can use",
+    body: "Everything surfaces through an interface that explains itself, written plainly and built to be accessible, so the hard problem underneath feels obvious.",
+  },
+];
+
 export type Skill = { group: string; items: string[] };
 
 export const skills: Skill[] = [
