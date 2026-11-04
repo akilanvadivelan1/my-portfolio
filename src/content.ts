@@ -5,12 +5,12 @@ export const profile = {
   tagline: "Developer & Builder",
   handle: "akilan.py",
   heroLine:
-    "I build AI-powered tools that help real people make sense of hard things.",
+    "I build software and machine-learning tools that help real people make sense of hard things.",
   heroSub:
     "From public-benefits eligibility to financial-risk analysis, I turn messy, high-stakes information into software people can actually use.",
   about: [
-    "I'm Akilan, a developer who likes aiming code at problems that matter. Most of what I make sits where everyday people meet systems that are too complicated: government benefits, dense financial filings, AI tools that usually assume you already know how they work.",
-    "My approach is practical. I start from the person who has to use the thing, keep the logic honest and traceable, and ship interfaces that explain themselves. I work mostly in TypeScript, React, and Python, and I like projects where the hard part is making something complex feel obvious.",
+    "I'm Akilan, a developer who likes aiming code at problems that matter. Most of what I make sits where everyday people meet systems that are too complicated: government benefits, dense financial filings, and tools that usually assume you already know how they work.",
+    "My approach is practical. I build software and machine-learning tools, starting from the person who has to use the thing, keeping the logic honest and traceable, and shipping interfaces that explain themselves. I work mostly in TypeScript, React, and Python, and I like projects where the hard part is making something complex feel obvious.",
   ],
 };
 
@@ -26,9 +26,9 @@ export const skills: Skill[] = [
     items: ["React", "Tailwind CSS", "Vite", "Responsive UI", "Accessibility"],
   },
   {
-    group: "AI & Data",
+    group: "Machine Learning & Data",
     items: [
-      "LLM integration",
+      "Model integration",
       "Gemini / OpenAI APIs",
       "Rule-based engines",
       "NLP sentiment analysis",

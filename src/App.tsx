@@ -4,10 +4,12 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import CursorDots from "./components/CursorDots";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-ink-950">
+    <div className="relative min-h-screen bg-ink-950">
+      <CursorDots />
       <Nav />
       <main>
         <Hero />
