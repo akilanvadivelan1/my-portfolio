@@ -1,8 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// For a user/org GitHub Pages site (akilanvadivelan1.github.io) base is "/".
+// Served from https://akilanvadivelan1.github.io/my-portfolio/ (a GitHub Pages
+// "project" site), so assets must be referenced under that subpath. If you
+// later move this to a user site or a custom domain at the root, set base "/".
 export default defineConfig({
   plugins: [react()],
-  base: "/",
+  base: "/my-portfolio/",
 });
