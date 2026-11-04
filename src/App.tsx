@@ -5,6 +5,7 @@ import About from "./components/About";
 import Layers from "./components/Layers";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import CursorDots from "./components/CursorDots";
 
@@ -21,6 +22,7 @@ export default function App() {
         <Layers />
         <Skills />
         <Projects />
+        <Contact />
       </main>
       <Footer />
     </div>

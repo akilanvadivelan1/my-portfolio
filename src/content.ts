@@ -3,8 +3,18 @@
 // Social links. A link with an empty URL is hidden automatically.
 export const socials: { label: string; href: string }[] = [
   { label: "GitHub", href: "https://github.com/akilanvadivelan1" },
-  { label: "LinkedIn", href: "" }, // paste your LinkedIn profile URL here
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/akilan-vadivelan-829793447/",
+  },
+  { label: "Email", href: "mailto:akilanvadivelan1@gmail.com" },
 ];
+
+export const contact = {
+  email: "akilanvadivelan1@gmail.com",
+  heading: "Want to build something together?",
+  body: "I'm always up for talking about software, machine learning, or a problem that real people are stuck on. If you have a project, a question, or just want to say hi, send me a note and I'll get back to you.",
+};
 
 export const profile = {
   name: "Akilan Vadivelan",
