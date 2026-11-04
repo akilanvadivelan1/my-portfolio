@@ -19,7 +19,7 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
-        mono: ["DotGothic16", "ui-monospace", "monospace"],
+        mono: ["Departure Mono", "ui-monospace", "monospace"],
       },
       keyframes: {
         "fade-up": {

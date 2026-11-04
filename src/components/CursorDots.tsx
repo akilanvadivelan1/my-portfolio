@@ -1,9 +1,7 @@
 import { useEffect, useRef } from "react";
 
-// A single soft red orb that eases toward the cursor, matching the accent red
-// used in the background glow (#f55036). It keeps tracking the pointer during
-// scroll by re-deriving the page position from the last known viewport point
-// plus the current scroll offset.
+// A soft red orb locked directly to the cursor (no trailing or easing).
+// Uses fixed positioning, so it stays correct while scrolling.
 const ACCENT = "#f55036";
 
 export default function CursorDots() {
@@ -16,60 +14,38 @@ export default function CursorDots() {
     ).matches;
     if (!fine || reduce) return;
 
-    let clientX = window.innerWidth / 2;
-    let clientY = window.innerHeight / 2;
-    let scrollAtMove = { x: window.scrollX, y: window.scrollY };
-
-    const pageTarget = () => ({
-      x: clientX + (window.scrollX - scrollAtMove.x),
-      y: clientY + (window.scrollY - scrollAtMove.y),
-    });
-
-    const pos = pageTarget();
+    const orb = orbRef.current;
+    if (!orb) return;
 
     const onMove = (e: MouseEvent) => {
-      clientX = e.clientX;
-      clientY = e.clientY;
-      scrollAtMove = { x: window.scrollX, y: window.scrollY };
+      orb.style.opacity = "1";
+      orb.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`;
     };
+    const onLeave = () => {
+      orb.style.opacity = "0";
+    };
+
     window.addEventListener("mousemove", onMove, { passive: true });
-
-    let raf = 0;
-    const tick = () => {
-      const target = pageTarget();
-      pos.x += (target.x - pos.x) * 0.18;
-      pos.y += (target.y - pos.y) * 0.18;
-      const n = orbRef.current;
-      if (n) {
-        n.style.transform = `translate3d(${pos.x}px, ${pos.y}px, 0) translate(-50%, -50%)`;
-      }
-      raf = requestAnimationFrame(tick);
-    };
-    raf = requestAnimationFrame(tick);
-
+    document.documentElement.addEventListener("mouseleave", onLeave);
     return () => {
       window.removeEventListener("mousemove", onMove);
-      cancelAnimationFrame(raf);
+      document.documentElement.removeEventListener("mouseleave", onLeave);
     };
   }, []);
 
   return (
     <div
+      ref={orbRef}
       aria-hidden
-      className="pointer-events-none absolute inset-0 z-[60] hidden md:block"
-      style={{ top: 0, left: 0 }}
-    >
-      <div
-        ref={orbRef}
-        className="absolute left-0 top-0 rounded-full"
-        style={{
-          width: 26,
-          height: 26,
-          background: `radial-gradient(circle at 35% 30%, ${ACCENT}, #c73a24 70%)`,
-          boxShadow: `0 0 18px 4px ${ACCENT}99, 0 0 42px 10px ${ACCENT}55`,
-          willChange: "transform",
-        }}
-      />
-    </div>
+      className="pointer-events-none fixed left-0 top-0 z-[60] hidden rounded-full md:block"
+      style={{
+        width: 22,
+        height: 22,
+        opacity: 0,
+        background: `radial-gradient(circle at 35% 30%, ${ACCENT}, #c73a24 70%)`,
+        boxShadow: `0 0 16px 3px ${ACCENT}99, 0 0 38px 8px ${ACCENT}55`,
+        willChange: "transform",
+      }}
+    />
   );
 }
