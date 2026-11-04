@@ -8,11 +8,16 @@ export default function Contact() {
       <div className="max-w-2xl">
         <p className="text-lg leading-relaxed text-white/80">{contact.body}</p>
         <a
-          href={`mailto:${contact.email}`}
+          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contact.email}`}
+          target="_blank"
+          rel="noreferrer"
           className="mt-8 inline-block rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
         >
           {contact.email}
         </a>
+        <p className="mt-4 font-mono text-sm text-haze">
+          Or copy it: {contact.email}
+        </p>
         <Socials className="mt-6" />
       </div>
     </Section>

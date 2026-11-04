@@ -7,7 +7,7 @@ export const socials: { label: string; href: string }[] = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/akilan-vadivelan-829793447/",
   },
-  { label: "Email", href: "mailto:akilanvadivelan1@gmail.com" },
+  { label: "Email", href: "https://mail.google.com/mail/?view=cm&fs=1&to=akilanvadivelan1@gmail.com" },
 ];
 
 export const contact = {
