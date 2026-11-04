@@ -1,5 +1,11 @@
 // All site content lives here so copy is easy to edit without touching components.
 
+// Social links. A link with an empty URL is hidden automatically.
+export const socials: { label: string; href: string }[] = [
+  { label: "GitHub", href: "https://github.com/akilanvadivelan1" },
+  { label: "LinkedIn", href: "" }, // paste your LinkedIn profile URL here
+];
+
 export const profile = {
   name: "Akilan Vadivelan",
   tagline: "Developer & Builder",

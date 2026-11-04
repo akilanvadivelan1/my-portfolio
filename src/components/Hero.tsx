@@ -1,4 +1,5 @@
 import { profile } from "../content";
+import Socials from "./Socials";
 
 export default function Hero() {
   return (
@@ -37,6 +38,7 @@ export default function Hero() {
             More about me
           </a>
         </div>
+        <Socials className="animate-fade-up mt-6" />
       </div>
     </section>
   );
