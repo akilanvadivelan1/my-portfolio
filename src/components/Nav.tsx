@@ -11,7 +11,7 @@ export default function Nav() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-ink-950/70 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <a href="#top" className="font-mono text-sm font-medium tracking-tight">
+        <a href="#top" className="font-mono text-sm font-medium uppercase tracking-[0.18em]">
           <span className="text-accent">{"> "}</span>
           {profile.handle}
         </a>

@@ -15,7 +15,7 @@ export default function Skills() {
             key={group.group}
             className="rounded-xl border border-white/10 bg-ink-900 p-6 transition-colors hover:border-white/20"
           >
-            <h3 className="font-mono text-sm text-accent">{group.group}</h3>
+            <h3 className="font-mono text-sm uppercase tracking-[0.18em] text-accent">{group.group}</h3>
             <ul className="mt-4 space-y-2">
               {group.items.map((item) => (
                 <li

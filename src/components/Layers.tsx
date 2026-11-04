@@ -42,7 +42,7 @@ function NestedLayer({ depth }: { depth: number }) {
     >
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <div>
-          <div className="font-mono text-xs uppercase tracking-widest text-accent">
+          <div className="font-mono text-xs uppercase tracking-[0.18em] text-accent">
             {layer.kicker}
           </div>
           <h3 className="mt-1 text-xl font-bold tracking-tight md:text-2xl">

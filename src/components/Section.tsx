@@ -20,7 +20,7 @@ export default function Section({ id, index, label, title, children }: Props) {
           shown ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
         }`}
       >
-        <div className="flex items-baseline gap-3 font-mono text-sm text-accent">
+        <div className="flex items-baseline gap-3 font-mono text-sm uppercase tracking-[0.18em] text-accent">
           <span>{index}</span>
           <span className="text-haze">{label}</span>
         </div>
