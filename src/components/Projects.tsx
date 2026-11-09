@@ -36,7 +36,7 @@ export default function Projects() {
             href={p.href}
             target="_blank"
             rel="noreferrer"
-            className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink-900 p-8 transition-all hover:border-accent/40 hover:bg-ink-800"
+            className="group relative flex flex-col lg:[&:last-child:nth-child(odd)]:col-span-2 overflow-hidden rounded-2xl border border-white/10 bg-ink-900 p-8 transition-all hover:border-accent/40 hover:bg-ink-800"
           >
             <div className="pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-accent/10 opacity-0 blur-3xl transition-opacity group-hover:opacity-100" />
 

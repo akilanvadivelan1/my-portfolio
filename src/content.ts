@@ -32,7 +32,7 @@ export const profile = {
 
 // Headline stats band (Groq-style confident numbers, but all mine).
 export const stats: { value: string; label: string }[] = [
-  { value: "2", label: "shipped products" },
+  { value: "3", label: "shipped products" },
   { value: "15", label: "benefit programs mapped" },
   { value: "500", label: "S&P companies analyzed" },
   { value: "0", label: "user data stored" },
@@ -100,6 +100,22 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    id: "omnidesk",
+    name: "OmniDesk",
+    blurb:
+      "A desk assistant that lives where your work already is. Press one shortcut, ask a question, and get back to work.",
+    description:
+      "OmniDesk is a multi-model assistant with a web app and a native Mac app built with Tauri and Rust. Press Option + / from any app and a small widget opens in the corner of your screen for quick questions and follow-ups. You pick the model that fits the task (Gemini, ChatGPT, Claude or Kiro) from one dropdown, or run all four as a pipeline where each plays a role: spec, research, critique and synthesis. Paste a sample of your own writing and it learns your tone to draft emails that sound like you. The web version is free with your own Gemini key, and Gemini is the live model today while the other providers are shown as previews.",
+    tags: ["React", "TypeScript", "Tailwind", "Tauri", "Rust", "Gemini API"],
+    href: "https://akilanvadivelan1.github.io/AIMODEL1/",
+    linkLabel: "Open OmniDesk",
+    stats: [
+      { label: "models to pick from", value: "4" },
+      { label: "global shortcut", value: "Opt + /" },
+      { label: "platforms", value: "Web + Mac" },
+    ],
+  },
   {
     id: "wa-benefits",
     name: "WA Benefits Navigator",
