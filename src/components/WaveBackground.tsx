@@ -47,12 +47,12 @@ export default function WaveBackground() {
       canvas.height = h * dpr;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       mouse.x = target.x = w / 2;
-      mouse.y = target.y = h * 0.7;
+      mouse.y = target.y = h * 0.86;
     };
 
     const draw = () => {
       ctx.clearRect(0, 0, w, h);
-      const baseY = h * 0.72;
+      const baseY = h * 0.86;
       const radius = 320;
       for (const wave of WAVES) {
         ctx.beginPath();
