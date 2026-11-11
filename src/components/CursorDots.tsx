@@ -1,8 +1,10 @@
 import { useEffect, useRef } from "react";
 
-// A soft red orb locked directly to the cursor (no trailing or easing).
-// Uses fixed positioning, so it stays correct while scrolling.
-const ACCENT = "#f55036";
+// A soft lavender orb with a faint sunrise-orange core, locked directly to the
+// cursor (no trailing or easing). Fixed positioning keeps it correct on scroll.
+const LAVENDER = "#9b7bea";
+const DEEP = "#6b48d6";
+const SUNRISE = "#ff9a4d";
 
 export default function CursorDots() {
   const orbRef = useRef<HTMLDivElement>(null);
@@ -42,8 +44,8 @@ export default function CursorDots() {
         width: 22,
         height: 22,
         opacity: 0,
-        background: `radial-gradient(circle at 35% 30%, ${ACCENT}, #c73a24 70%)`,
-        boxShadow: `0 0 16px 3px ${ACCENT}99, 0 0 38px 8px ${ACCENT}55`,
+        background: `radial-gradient(circle at 35% 30%, ${SUNRISE} 0%, ${LAVENDER} 35%, ${DEEP} 80%)`,
+        boxShadow: `0 0 16px 3px ${LAVENDER}99, 0 0 38px 8px ${DEEP}66`,
         willChange: "transform",
       }}
     />

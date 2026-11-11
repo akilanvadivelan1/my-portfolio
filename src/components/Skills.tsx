@@ -22,7 +22,7 @@ export default function Skills() {
                   key={item}
                   className="flex items-center gap-2 text-sm text-white/80"
                 >
-                  <span className="h-1 w-1 rounded-full bg-accent" />
+                  <span className="h-1 w-1 rounded-full bg-sunrise" />
                   {item}
                 </li>
               ))}

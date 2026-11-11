@@ -10,7 +10,7 @@ export default function Socials({ className = "" }: { className?: string }) {
           href={s.href}
           target="_blank"
           rel="noreferrer"
-          className="rounded-lg border border-white/15 px-4 py-2 font-mono text-xs uppercase tracking-[0.18em] text-white transition-colors hover:border-accent/60 hover:text-accent"
+          className="rounded-lg border border-white/15 px-4 py-2 font-mono text-xs uppercase tracking-[0.18em] text-white transition-colors hover:border-accent/70 hover:text-accent-soft"
         >
           {s.label} {"\u2197"}
         </a>

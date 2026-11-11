@@ -36,13 +36,13 @@ export default function Projects() {
             href={p.href}
             target="_blank"
             rel="noreferrer"
-            className="group relative flex flex-col lg:[&:last-child:nth-child(odd)]:col-span-2 overflow-hidden rounded-2xl border border-white/10 bg-ink-900 p-8 transition-all hover:border-accent/40 hover:bg-ink-800"
+            className="group relative flex flex-col lg:[&:last-child:nth-child(odd)]:col-span-2 overflow-hidden rounded-2xl border border-white/10 bg-ink-900 p-8 transition-all hover:border-accent/50 hover:bg-ink-800"
           >
             <div className="pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-accent/10 opacity-0 blur-3xl transition-opacity group-hover:opacity-100" />
 
             <div className="flex items-start justify-between gap-4">
               <h3 className="text-2xl font-bold tracking-tight">{p.name}</h3>
-              <span className="mt-1 text-haze transition-colors group-hover:text-accent">
+              <span className="mt-1 text-haze transition-colors group-hover:text-sunrise">
                 <ArrowIcon />
               </span>
             </div>
@@ -74,7 +74,7 @@ export default function Projects() {
               ))}
             </div>
 
-            <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-accent">
+            <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-sunrise">
               {p.linkLabel}
               <ArrowIcon />
             </span>

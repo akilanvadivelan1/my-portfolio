@@ -11,7 +11,7 @@ export default function Contact() {
           href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contact.email}`}
           target="_blank"
           rel="noreferrer"
-          className="mt-8 inline-block rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+          className="mt-8 inline-block rounded-lg bg-gradient-to-r from-accent-deep to-accent px-5 py-3 text-sm font-semibold text-white shadow-[0_0_28px_-6px_rgba(155,123,234,0.8)] transition-opacity hover:opacity-90"
         >
           {contact.email}
         </a>

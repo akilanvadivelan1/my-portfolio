@@ -5,15 +5,20 @@ export default {
     extend: {
       colors: {
         ink: {
-          950: "#07080a",
-          900: "#0b0d10",
-          800: "#121519",
-          700: "#1a1e24",
-          600: "#272c34",
+          950: "#030304",
+          900: "#08080b",
+          800: "#0e0d14",
+          700: "#16141f",
+          600: "#221f30",
         },
         accent: {
-          DEFAULT: "#f55036",
-          soft: "#ff6a4d",
+          DEFAULT: "#9b7bea", // deep lavender
+          deep: "#6b48d6",
+          soft: "#b79df2",
+        },
+        sunrise: {
+          DEFAULT: "#ff9a4d", // hint of sunrise orange
+          deep: "#f2702a",
         },
         haze: "#8b949e",
       },

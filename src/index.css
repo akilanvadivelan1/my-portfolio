@@ -43,7 +43,8 @@ body {
 /* Soft vertical fade that deepens the page toward the bottom */
 .deepen {
   background:
-    radial-gradient(1200px 600px at 50% -10%, rgba(245, 80, 54, 0.08), transparent 60%);
+    radial-gradient(1200px 600px at 50% -10%, rgba(107, 72, 214, 0.14), transparent 60%),
+    radial-gradient(700px 400px at 85% 8%, rgba(255, 154, 77, 0.05), transparent 65%);
 }
 
 .text-balance {
@@ -51,5 +52,5 @@ body {
 }
 
 ::selection {
-  background: rgba(245, 80, 54, 0.3);
+  background: rgba(155, 123, 234, 0.35);
 }

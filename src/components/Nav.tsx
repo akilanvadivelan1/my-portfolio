@@ -13,7 +13,7 @@ export default function Nav() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-ink-950/70 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <a href="#top" className="font-mono text-sm font-medium uppercase tracking-[0.18em]">
-          <span className="text-accent">{"> "}</span>
+          <span className="text-sunrise">{"> "}</span>
           {profile.handle}
         </a>
         <nav className="flex items-center gap-1">
