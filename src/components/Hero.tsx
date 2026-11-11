@@ -17,7 +17,11 @@ export default function Hero() {
           {profile.handle}
         </p>
         <h1 className="animate-fade-up text-balance mt-5 max-w-4xl text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl">
-          Hi, I'm {profile.name.split(" ")[0]}.
+          Hi, I'm{" "}
+          <span className="bg-gradient-to-r from-accent-soft via-accent to-sunrise bg-clip-text text-transparent">
+            {profile.name.split(" ")[0]}
+          </span>
+          .
         </h1>
         <p className="animate-fade-up text-balance mt-6 max-w-2xl text-xl text-white/85 md:text-2xl">
           {profile.heroLine}

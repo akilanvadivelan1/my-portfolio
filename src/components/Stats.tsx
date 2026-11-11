@@ -17,7 +17,7 @@ export default function Stats() {
             className="transition-all duration-700"
             style={{ transitionDelay: `${i * 80}ms` }}
           >
-            <div className="text-4xl font-extrabold tracking-tight md:text-5xl">
+            <div className="bg-gradient-to-br from-white via-accent-soft to-sunrise bg-clip-text text-4xl font-extrabold tracking-tight text-transparent md:text-5xl">
               {s.value}
             </div>
             <div className="mt-2 text-sm text-haze">{s.label}</div>
