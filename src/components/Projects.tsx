@@ -42,7 +42,7 @@ export default function Projects() {
               target="_blank"
               rel="noreferrer"
               onPointerMove={onSpotlightMove}
-              className={`spotlight group relative flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink-900/80 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:bg-ink-800/90 hover:shadow-[0_24px_60px_-24px_rgba(107,72,214,0.55)] ${
+              className={`spotlight glass group relative flex cursor-pointer flex-col overflow-hidden rounded-2xl hover:-translate-y-1 hover:shadow-[0_24px_60px_-24px_rgba(107,72,214,0.55)] ${
                 wide ? "lg:col-span-2 lg:flex-row" : ""
               }`}
             >

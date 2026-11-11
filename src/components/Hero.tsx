@@ -65,7 +65,7 @@ export default function Hero() {
           </a>
           <a
             href="#about"
-            className="rounded-lg border border-white/15 px-5 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/5"
+            className="glass glass-chip rounded-lg px-5 py-3 text-sm font-semibold text-white"
           >
             More about me
           </a>

@@ -30,7 +30,7 @@ export default function Nav() {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-ink-950/60 backdrop-blur-xl">
+    <header className="glass-bar fixed inset-x-0 top-0 z-50">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <a
           href="#top"

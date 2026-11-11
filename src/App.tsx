@@ -14,6 +14,25 @@ import ScrollProgress from "./components/ScrollProgress";
 export default function App() {
   return (
     <div className="relative min-h-screen bg-ink-950">
+      <svg width="0" height="0" className="absolute" aria-hidden focusable="false">
+        <filter id="liquid" x="0" y="0" width="100%" height="100%">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="0.012 0.02"
+            numOctaves="2"
+            seed="7"
+            result="noise"
+          />
+          <feGaussianBlur in="noise" stdDeviation="2" result="soft" />
+          <feDisplacementMap
+            in="SourceGraphic"
+            in2="soft"
+            scale="22"
+            xChannelSelector="R"
+            yChannelSelector="G"
+          />
+        </filter>
+      </svg>
       <div className="aurora" aria-hidden>
         <span className="a1" />
         <span className="a2" />

@@ -6,7 +6,7 @@ export default function Marquee() {
   const loop = [...items, ...items];
   return (
     <div
-      className="marquee relative overflow-hidden border-y border-white/5 bg-ink-950/40 py-5"
+      className="marquee glass-band relative overflow-hidden border-y border-white/10 py-5"
       aria-label="Skills"
     >
       <div className="marquee-track gap-3 pr-3">

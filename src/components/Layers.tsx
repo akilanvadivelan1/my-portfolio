@@ -28,10 +28,8 @@ function NestedLayer({ depth, shown }: { depth: number; shown: boolean }) {
 
   return (
     <div
-      className={`rounded-2xl border p-6 transition-all duration-700 ease-out md:p-8 ${
-        depth === 0
-          ? "border-white/10 bg-ink-900/80"
-          : "border-accent/20 bg-ink-800/90 shadow-[0_0_40px_-18px_rgba(155,123,234,0.6)]"
+      className={`glass rounded-2xl p-6 transition-all duration-700 ease-out md:p-8 ${
+        depth === 0 ? "" : "glass-tint"
       } ${shown ? "translate-y-0 scale-100 opacity-100" : "translate-y-6 scale-[0.97] opacity-0"}`}
       style={{ transitionDelay: `${depth * 250}ms` }}
     >

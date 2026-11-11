@@ -11,7 +11,7 @@ export default function About() {
           ))}
         </div>
         <div className="md:col-span-2">
-          <div className="rounded-xl border border-white/10 bg-ink-900 p-6 font-mono text-sm">
+          <div className="glass rounded-xl p-6 font-mono text-sm">
             <div className="flex items-center gap-1.5 pb-4">
               <span className="h-3 w-3 rounded-full bg-white/15" />
               <span className="h-3 w-3 rounded-full bg-white/15" />

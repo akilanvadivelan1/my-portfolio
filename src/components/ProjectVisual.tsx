@@ -100,7 +100,7 @@ export default function ProjectVisual({ id }: { id: string }) {
   return (
     <div
       aria-hidden
-      className="relative flex h-48 items-center justify-center overflow-hidden bg-gradient-to-br from-ink-700 via-ink-800 to-ink-950"
+      className="relative flex h-48 items-center justify-center overflow-hidden bg-gradient-to-br from-accent-deep/25 via-transparent to-sunrise/10"
     >
       <div className="grid-backdrop absolute inset-0 opacity-50" />
       <div className="absolute -bottom-10 left-1/2 h-32 w-56 -translate-x-1/2 rounded-full bg-accent-deep/30 blur-3xl" />

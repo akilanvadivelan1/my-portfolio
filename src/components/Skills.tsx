@@ -10,7 +10,7 @@ export default function Skills() {
           <div
             key={group.group}
             onPointerMove={onSpotlightMove}
-            className="spotlight rounded-xl border border-white/10 bg-ink-900/80 p-6 backdrop-blur transition-all duration-300 hover:-translate-y-1"
+            className="spotlight glass rounded-xl p-6 hover:-translate-y-1"
           >
             <h3 className="font-mono text-sm uppercase tracking-[0.18em] text-accent">
               {group.group}
