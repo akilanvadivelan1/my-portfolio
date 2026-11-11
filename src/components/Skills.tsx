@@ -1,21 +1,20 @@
 import Section from "./Section";
 import { skills } from "../content";
+import { onSpotlightMove } from "../hooks/spotlight";
 
 export default function Skills() {
   return (
-    <Section
-      id="skills"
-      index="03"
-      label="skills"
-      title="What I work with."
-    >
+    <Section id="skills" index="03" label="skills" title="What I work with.">
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {skills.map((group) => (
           <div
             key={group.group}
-            className="rounded-xl border border-white/10 bg-ink-900 p-6 transition-colors hover:border-white/20"
+            onPointerMove={onSpotlightMove}
+            className="spotlight rounded-xl border border-white/10 bg-ink-900/80 p-6 backdrop-blur transition-all duration-300 hover:-translate-y-1"
           >
-            <h3 className="font-mono text-sm uppercase tracking-[0.18em] text-accent">{group.group}</h3>
+            <h3 className="font-mono text-sm uppercase tracking-[0.18em] text-accent">
+              {group.group}
+            </h3>
             <ul className="mt-4 space-y-2">
               {group.items.map((item) => (
                 <li
