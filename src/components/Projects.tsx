@@ -46,7 +46,7 @@ export default function Projects() {
                 wide ? "lg:col-span-2 lg:flex-row" : ""
               }`}
             >
-              <div className={wide ? "lg:w-2/5 lg:shrink-0" : ""}>
+              <div className={wide ? "lg:flex lg:w-2/5 lg:shrink-0" : ""}>
                 <ProjectVisual id={p.id} />
               </div>
 
